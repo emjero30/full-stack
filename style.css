@@ -1,0 +1,50 @@
+/*
+* { "*" is the universal selector: selects all elements of every type (which is essentially the whole document)
+    color: purple;
+}
+    
+div { type selector: selects all elements of one type (for this case the all elements that have the div type)
+    color:white;
+} 
+
+.class-selector { class selector: selects all elements with a given class (for this case it selects elements with the class "class-selector")
+    color:red;
+} note: class selectors won't work if the class begins with a number
+
+.multi-class-selector { you can assign multiple classes in HTML just separate each class with a space and the unique designs will compound
+    font-size: 24px;
+} same designs will be subject to lowest down rule and specificity, whichever has highest priority is the design that is used
+
+#title { id selector: works for ids the same way class selectors work for class, should be used only for specific items as ids are specific
+    background-color:red;
+} note: also won't work if id begins with number
+
+if you have two groups that share a specific design for stuff like text or background but also have other unique designs the grouping selector can be used to cut down on repetition.
+
+if you have this:
+.read {
+  color: white;
+  background-color: black;
+   several unique declarations
+}
+
+.unread {
+  color: white;
+  background-color: black;
+   several unique declarations 
+}
+use this instead:
+.read,
+.unread {
+  color: white;
+  background-color: black;
+}
+
+.read {
+   several unique declarations 
+}
+
+.unread {
+   several unique declarations 
+} both have the same output but the second one makes it easier to edit the design that both classes share
+*/
